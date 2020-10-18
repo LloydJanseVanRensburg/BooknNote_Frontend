@@ -1,0 +1,109 @@
+.fullSearchNav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  background: #fff;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+}
+
+.fullSearchNav .searchbar {
+  display: flex;
+  margin: 0;
+  min-width: 300px;
+  flex: 0.9;
+}
+
+.fullSearchNav__closeBtn {
+  cursor: pointer;
+}
+
+.fullSearchNav__closeBtn > i {
+  font-size: 30px;
+  margin-left: 15px;
+}
+
+.fullSearchNav__closeBtn:hover {
+  opacity: 0.8;
+  color: red;
+}
+
+.searchbar {
+  display: flex;
+  align-items: center;
+  border: 0.5px solid var(--darkgray-color);
+  min-width: 400px;
+  margin-left: 15px;
+  width: 500px;
+  max-width: 850px;
+  border-radius: 8px;
+  flex: 0.5;
+}
+
+.searchbar__input {
+  flex: 1;
+  margin-left: 5px;
+  padding: 3px 10px;
+  border: none;
+  font-size: 18px;
+  outline-width: 0;
+  color: var(--purple-color);
+}
+
+.searchbar__icon {
+  min-height: 50px;
+  display: flex;
+  width: 7%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 2px 5px;
+  border: none;
+  border-left: 0.5px solid var(--darkgray-color);
+  border-radius: 0 8px 8px 0;
+  cursor: pointer;
+}
+
+.searchbar__icon > i {
+  font-size: 20px;
+  color: var(--darkgray-color);
+}
+
+.searchbar__icon:hover,
+.searchbar__icon:active {
+  background: #d6d6d6;
+}
+
+.searchbar__mobileicon {
+  display: none;
+  cursor: pointer;
+}
+
+.searchbar__mobileicon > i {
+  font-size: 35px;
+  color: var(--darkgray-color);
+}
+
+.searchbar__mobileicon:hover > i {
+  opacity: 0.75;
+}
+
+@media (max-width: 1170px) {
+  .searchbar {
+    display: none;
+  }
+
+  .searchbar__mobileicon {
+    display: block;
+  }
+}
+
+@media (max-width: 425px) {
+  .searchbar__mobileicon > i {
+    font-size: 25px;
+  }
+}

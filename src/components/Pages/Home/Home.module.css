@@ -1,0 +1,45 @@
+.homepage {
+  width: 100%;
+}
+
+.homepage__outerBanner {
+  border: 3px solid var(--purple-color);
+  width: 100%;
+  height: 45vh;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 8px;
+  margin-top: 5px;
+}
+
+.homepage__innerBanner {
+  background: var(--purple-color);
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.homepage__innerBanner > h1 {
+  font-size: 3rem;
+  padding: 1rem;
+  text-align: center;
+  font-family: "Architects Daughter", sans-serif;
+}
+
+@media (max-width: 700px) {
+  .homepage__outerBanner {
+    height: 35vh;
+  }
+
+  .homepage__innerBanner > h1 {
+    font-size: 1.8rem;
+  }
+}

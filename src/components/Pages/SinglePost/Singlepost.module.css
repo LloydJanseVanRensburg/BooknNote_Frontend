@@ -1,0 +1,154 @@
+.sppage {
+  margin-top: 10vh;
+}
+
+.sppage__container {
+  width: 75%;
+  margin: auto;
+}
+
+.sppage__gridbox {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  gap: 1rem;
+}
+
+.sppage__reviews {
+  margin-top: 5rem;
+}
+
+.gridbox__col1 {
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.gridbox__col2 {
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  max-height: 500px;
+  justify-content: space-between;
+}
+
+.gridbox__col2 p {
+  line-height: 1.6;
+}
+
+.col1__image {
+  width: 500px;
+  height: 500px;
+}
+
+.col1__image > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.col1__btngroup {
+  width: 100%;
+}
+
+.btngroup__Contact {
+  padding: 10px 17px;
+  border: 1px solid var(--offwhite-color);
+  background: var(--purple-color);
+  color: #fff;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 0 10px 0 0;
+}
+
+.btngroup__EditBtn {
+  padding: 10px 17px;
+  border: 1px solid var(--offwhite-color);
+  background: var(--darkgray-color);
+  color: #fff;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 0 10px 0 0;
+}
+
+.btngroup__Contact:hover,
+.btngroup__Contact:focus {
+  outline-width: 0;
+  border: 1px solid var(--purple-color);
+  background: #fff;
+  color: var(--darkgray-color);
+}
+
+.btngroup__EditBtn:hover,
+.btngroup__EditBtn:focus {
+  outline-width: 0;
+  border: 1px solid var(--darkgray-color);
+  background: #fff;
+  color: var(--darkgray-color);
+}
+
+.col2__title,
+.col2__price,
+.col2__rating {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.col2__description {
+  overflow-y: auto;
+  margin: 20px 0;
+}
+
+.reviews__container {
+  margin: 20px 0;
+  padding: 1rem;
+  width: 100%;
+  height: 600px;
+  max-height: 600px;
+  overflow-y: auto;
+  background: #fff;
+}
+
+.reviews__flexgroup {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flexgroup__addBtn {
+  padding: 10px 17px;
+  border: 1px solid var(--offwhite-color);
+  background: var(--darkgray-color);
+  color: #fff;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 0 10px 0 0;
+}
+
+.flexgroup__addBtn:hover,
+.flexgroup__addBtn:focus {
+  outline-width: 0;
+  border: 1px solid var(--darkgray-color);
+  background: #fff;
+  color: var(--darkgray-color);
+}
+
+.reviews__single {
+  background: #c3c3c3;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.reviews__single > span {
+  font-weight: bold;
+}
+
+.reviews__single span,
+.reviews__single p {
+  margin: 10px 0;
+  line-height: 1.5;
+}

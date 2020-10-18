@@ -1,0 +1,45 @@
+.logo {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  flex: 0.2;
+  max-width: 320px;
+}
+
+.logo__homeLink {
+  display: flex;
+  text-decoration: none;
+  cursor: pointer;
+  align-items: center;
+}
+
+.logo__words {
+  font-size: 1.9rem;
+  font-weight: 700;
+  margin-right: 5px;
+  max-width: 240px;
+  flex: 1;
+  color: var(--darkgray-color);
+}
+
+.logo__circle {
+  display: flex;
+  border: none;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  background: var(--purple-color);
+}
+
+@media (max-width: 425px) {
+  .logo__words {
+    font-size: 1.4rem;
+  }
+}

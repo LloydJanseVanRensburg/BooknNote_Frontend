@@ -1,0 +1,74 @@
+/* Fix the jumping navbar */
+.navlinks {
+  flex: 0.3;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 15px;
+  max-width: 340px;
+}
+
+.navlinks__link {
+  border: 1px solid transparent;
+  padding: 9px 10px;
+  cursor: pointer;
+}
+
+.navlinks__link:hover {
+  border-bottom: 1px solid var(--purple-color);
+}
+
+.navlinks__link:hover > a {
+  color: var(--purple-color);
+}
+
+.navlinks__shopnow {
+  border: none;
+  padding: 10px 15px;
+  font-weight: 700;
+  border-radius: 8px;
+  background: var(--darkgray-color);
+  font-size: 0.6rem;
+}
+
+.navlinks__link > a {
+  text-decoration: none;
+  color: var(--darkgray-color);
+}
+
+.navlinks__shopnow > a {
+  color: var(--offwhite-color);
+  font-size: 0.6rem;
+  height: 100%;
+  width: 100%;
+  display: inline-block;
+}
+
+.navlinks__shopnow:hover {
+  border-bottom: none;
+}
+
+.navlinks__shopnow:hover > a {
+  color: #f1e900;
+}
+
+@media (max-width: 1170px) {
+  .navlinks {
+    flex-direction: column;
+    z-index: 15;
+    margin: 0;
+    width: 100%;
+    flex: 0.8;
+    height: 250px;
+  }
+}
+
+.inactive {
+  display: none;
+}
+
+.active {
+  display: flex;
+}

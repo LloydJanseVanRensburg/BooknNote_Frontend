@@ -1,0 +1,22 @@
+.advertcard {
+  width: 250px;
+  box-shadow: 0 1px 4px 1px rgba(0, 0, 0, 0.12);
+  background: #fff;
+  cursor: pointer;
+  margin: 20px;
+}
+
+.advertcard__thumbnail {
+  width: 100%;
+  object-fit: cover;
+}
+
+.advertcard__info {
+  padding: 10px;
+}
+
+@media (max-width: 745px) {
+  .advertcard {
+    width: 100%;
+  }
+}

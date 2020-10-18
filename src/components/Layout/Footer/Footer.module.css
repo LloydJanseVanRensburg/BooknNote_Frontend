@@ -1,0 +1,31 @@
+.footer {
+  width: 100%;
+  background: var(--darkgray-color);
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer > h5 {
+  color: #fff;
+  margin-top: 20px;
+}
+
+.footer__socialLinks {
+  display: flex;
+  width: 400px;
+  justify-content: space-around;
+}
+
+.footer__socialLinks > i {
+  font-size: 2rem;
+  color: #fff;
+  margin: 20px 0;
+  cursor: pointer;
+}
+
+.footer__socialLinks > i:hover {
+  color: var(--purple-color);
+}
