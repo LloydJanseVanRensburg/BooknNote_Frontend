@@ -1,5 +1,5 @@
 .sppage {
-  margin-top: 10vh;
+  margin: 10vh 0;
 }
 
 .sppage__container {
@@ -11,6 +11,8 @@
   display: grid;
   grid-template-columns: repeat(2, 2fr);
   gap: 1rem;
+  width: 75%;
+  margin: auto;
 }
 
 .sppage__reviews {
@@ -18,17 +20,17 @@
 }
 
 .gridbox__col1 {
-  height: 600px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
 }
 
 .gridbox__col2 {
   display: flex;
   flex-direction: column;
-  height: 500px;
-  max-height: 500px;
+  height: 400px;
+  max-height: 400px;
   justify-content: space-between;
 }
 
@@ -37,21 +39,87 @@
 }
 
 .col1__image {
-  width: 500px;
-  height: 500px;
+  position: relative;
+  width: 400px;
+  height: 400px;
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.advertcard__typeSleeve {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-left: 90px solid transparent;
+  opacity: 0.95;
+  border-radius: 0 0 0 10px;
+  width: 0;
+  height: 0;
 }
 
-.col1__image > img {
+.advertcard__typeText {
+  position: absolute;
+  top: 15px;
+  right: 0;
+  padding: 7px;
+  color: var(--offwhite-color);
+  font-size: 0.8rem;
+  font-weight: bold;
+  transform: rotate(45deg);
+}
+
+.contactform__formgroup {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.contactform__formgroup > label {
+  display: block;
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.contactform__formgroup > input,
+.contactform__formgroup > textarea {
+  width: 100%;
+  border: 1px solid var(--darkgray-color);
+  padding: 10px 17px;
+  border-radius: 8px;
+  outline-width: 0ch;
+  resize: none;
+}
+
+.contactform__sendBtn {
+  display: block;
+  width: 100%;
+  background: var(--purple-color);
+  opacity: 0.9;
+  color: var(--offwhite-color);
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 10px 17px;
+  border: 1px solid var(--purple-color);
+  outline-width: 0ch;
+  border-radius: 8px;
+}
+
+.contactform__sendBtn:hover {
+  background: var(--offwhite-color);
+  border: 1px solid var(--darkgray-color);
+  color: var(--darkgray-color);
 }
 
 .col1__btngroup {
-  width: 100%;
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .btngroup__Contact {
+  flex: 0.5;
   padding: 10px 17px;
   border: 1px solid var(--offwhite-color);
   background: var(--purple-color);
@@ -59,18 +127,17 @@
   font-size: 1.2rem;
   border-radius: 8px;
   cursor: pointer;
-  margin: 0 10px 0 0;
 }
 
 .btngroup__EditBtn {
+  flex: 0.5;
   padding: 10px 17px;
   border: 1px solid var(--offwhite-color);
-  background: var(--darkgray-color);
+  background: var(--danger-color);
   color: #fff;
   font-size: 1.2rem;
   border-radius: 8px;
   cursor: pointer;
-  margin: 0 10px 0 0;
 }
 
 .btngroup__Contact:hover,
@@ -78,18 +145,22 @@
   outline-width: 0;
   border: 1px solid var(--purple-color);
   background: #fff;
-  color: var(--darkgray-color);
+  color: var(--purple-color);
 }
 
 .btngroup__EditBtn:hover,
 .btngroup__EditBtn:focus {
   outline-width: 0;
-  border: 1px solid var(--darkgray-color);
+  border: 1px solid var(--danger-color);
   background: #fff;
-  color: var(--darkgray-color);
+  color: var(--danger-color);
 }
 
-.col2__title,
+.col2__title {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
 .col2__price,
 .col2__rating {
   font-size: 1.2rem;
@@ -102,18 +173,20 @@
 }
 
 .reviews__container {
-  margin: 20px 0;
+  margin: 20px auto;
   padding: 1rem;
-  width: 100%;
-  height: 600px;
+  width: 75%;
+  max-height: 600px;
   max-height: 600px;
   overflow-y: auto;
   background: #fff;
+  box-shadow: 0 1px 4px 1px rgba(0, 0, 0, 0.12);
 }
 
 .reviews__flexgroup {
   display: flex;
-  width: 100%;
+  margin: auto;
+  width: 75%;
   justify-content: space-between;
   align-items: center;
 }
@@ -141,6 +214,8 @@
   background: #c3c3c3;
   padding: 1rem;
   margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
 }
 
 .reviews__single > span {
@@ -151,4 +226,150 @@
 .reviews__single p {
   margin: 10px 0;
   line-height: 1.5;
+}
+
+.single__deleteBtn {
+  padding: 10px 17px;
+  color: var(--offwhite-color);
+  background: var(--danger-color);
+  border: 1px solid var(--offwhite-color);
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.modal__formgroup {
+  width: 550px;
+  margin: 10px 0;
+}
+
+.modal__title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.modal__formgroup > label {
+  display: block;
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.modal__formgroup > input,
+.modal__formgroup > textarea {
+  width: 100%;
+  display: block;
+  font-size: 1.2rem;
+  padding: 10px 17px;
+  border: 1px solid var(--darkgray-color);
+  border-radius: 8px;
+  outline-width: 0ch;
+  resize: none;
+}
+
+.modal__formgroup > select {
+  width: 100%;
+  display: block;
+  font-size: 1.2rem;
+  padding: 10px 17px;
+  border: 1px solid var(--darkgray-color);
+  border-radius: 8px;
+  outline-width: 0ch;
+  color: var(--purple-color);
+}
+
+.modal__formgroup > input:focus,
+.modal__formgroup > textarea:focus {
+  box-shadow: 0 1px 4px 1px var(--purple-color);
+}
+
+.modal__btngroup {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btngroup__cancelBtn {
+  padding: 10px 17px;
+  flex: 0.4;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  border: 1px solid var(--darkgray-color);
+  background-color: var(--offwhite-color);
+  color: var(--darkgray-color);
+  outline-width: 0ch;
+  cursor: pointer;
+}
+
+.btngroup__saveBtn {
+  padding: 10px 17px;
+  flex: 0.4;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  border: 1px solid var(--purple-color);
+  background-color: var(--purple-color);
+  color: var(--offwhite-color);
+  outline-width: 0ch;
+  cursor: pointer;
+}
+
+.ratingValue {
+  color: var(--darkgray-color);
+  font-weight: bold;
+  font-size: 2rem;
+  font-family: monospace;
+}
+
+.deleteConfirm {
+  padding: 1rem;
+  width: 500px;
+  background: var(--danger-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.deleteConfirm > label {
+  color: var(--offwhite-color);
+  font-weight: bold;
+  font-size: 2rem;
+  display: block;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.deleteAdvert__confirmBtn {
+  width: 100%;
+  display: block;
+  border: 1px solid var(--danger-color);
+  border-radius: 8px;
+  background: var(--offwhite-color);
+  color: var(--danger-color);
+  padding: 20px;
+  text-transform: uppercase;
+  margin: 1rem 0 0 0;
+  font-size: 1.2rem;
+}
+
+.deleteAdvert__confirmBtn:hover {
+  background-color: var(--darkgray-color);
+  color: var(--offwhite-color);
+}
+
+@media (max-width: 1170px) {
+  .sppage__gridbox {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .sppage {
+    margin-top: 1rem;
+  }
+
+  .sppage__container {
+    width: 100%;
+    padding: 1rem;
+  }
 }

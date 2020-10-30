@@ -1,0 +1,103 @@
+.maintainadvert {
+  width: 100%;
+  height: calc(100vh - 100px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.maintainadvert__formTitle {
+  font-size: 1.5rem;
+  color: var(--darkgray-color);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.maintainadvert__form {
+  box-shadow: 0 1px 4px 1px rgba(0, 0, 0, 0.12);
+  background: #fff;
+  padding: 1rem;
+}
+
+select {
+  padding: 7px 13px;
+  outline-width: 0;
+  color: var(--darkgray-color);
+  border-radius: 8px;
+  border: 1px solid var(--darkgray-color);
+}
+
+select:focus {
+  box-shadow: 0 1px 4px 1px var(--purple-color);
+}
+
+.form__formgroup {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.form__formgroup > label {
+  display: block;
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+}
+
+.form__formgroup > input,
+.form__formgroup > textarea {
+  outline-width: 0ch;
+  width: 100%;
+  padding: 7px 13px;
+  resize: none;
+  overflow: auto;
+  background: #f9f9f9;
+  outline-width: none;
+  border: 1px solid var(--darkgray-color);
+  border-radius: 8px;
+}
+
+.form__formgroup > input:focus,
+.form__formgroup > textarea:focus {
+  box-shadow: 0 1px 4px 1px var(--purple-color);
+}
+
+.form__formbuttons {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.form__formbuttons button {
+  display: inline-block;
+  padding: 7px 13px;
+  margin-right: 5px;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline-width: 0;
+  cursor: pointer;
+}
+
+.formbuttons__cancelbtn {
+  background: var(--offwhite-color);
+  color: var(--darkgray-color);
+  border: 1px solid var(--darkgray-color);
+}
+
+.formbuttons__createbtn {
+  background: var(--purple-color);
+  color: var(--offwhite-color);
+  border: 1px solid var(--offwhite-color);
+}
+
+.formbuttons__cancelbtn:hover,
+.formbuttons__cancelbtn:focus {
+  background: var(--darkgray-color);
+  color: var(--offwhite-color);
+}
+
+.formbuttons__createbtn:hover,
+.formbuttons__createbtn:focus {
+  background: var(--offwhite-color);
+  color: var(--purple-color);
+  border: 1px solid var(--purple-color);
+}

@@ -5,6 +5,10 @@
   --purple-color: #6c3d91;
   --offwhite-color: #f4f4f4;
   --darkgray-color: #333;
+  --primary-color: #003699;
+  --danger-color: #dc3545;
+  --success-color: #28a745;
+  --warning-color: #ead637;
 }
 
 * {
@@ -16,6 +20,15 @@
 body {
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
   background: var(--offwhite-color);
+  color: var(--darkgray-color);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  max-height: 300px;
+  width: auto;
+  height: auto;
 }
 
 ::placeholder {
@@ -34,4 +47,61 @@ body {
   /* Microsoft Edge */
   color: var(--purple-color);
   opacity: 0.8;
+}
+
+.alert {
+  padding: 0.7rem;
+  opacity: 0.9;
+  background: var(--offwhite-color);
+  color: #333;
+  font-family: "Montserrat", sans-serif;
+}
+
+.btn-primary,
+.bg-primary,
+.badge-primary,
+.alert-primary {
+  background: var(--primary-color);
+  color: #fff;
+}
+
+.btn-light,
+.bg-light,
+.badge-light,
+.alert-light {
+  background: var(--offwhite-color);
+  color: #333;
+}
+
+.btn-dark,
+.bg-dark,
+.badge-dark,
+.alert-dark {
+  background: var(--darkgray-color);
+  color: #fff;
+}
+
+.btn-danger,
+.bg-danger,
+.badge-danger,
+.alert-danger {
+  background: var(--danger-color);
+  color: #fff;
+}
+
+.btn-success,
+.bg-success,
+.badge-success,
+.alert-success {
+  background: var(--success-color);
+  color: #fff;
+}
+
+.btn-white,
+.bg-white,
+.badge-white,
+.alert-white {
+  background: #fff;
+  color: #333;
+  border: #ccc solid 1px;
 }

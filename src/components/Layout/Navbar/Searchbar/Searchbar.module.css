@@ -14,8 +14,7 @@
 .fullSearchNav .searchbar {
   display: flex;
   margin: 0;
-  min-width: 300px;
-  flex: 0.9;
+  min-width: 600px;
 }
 
 .fullSearchNav__closeBtn {

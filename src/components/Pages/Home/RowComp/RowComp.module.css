@@ -1,6 +1,6 @@
 .rowcomp {
   margin: auto;
-  width: 85%;
+  width: 100%;
 }
 
 .rowcomp__title {
@@ -14,7 +14,6 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin-bottom: 20px;
 }
 
 @media (max-width: 623px) {
